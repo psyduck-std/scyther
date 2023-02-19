@@ -1,4 +1,4 @@
-module github.com/gastrodon/psyduck-std/scyther
+module github.com/psyduck-std/scyther
 
 go 1.18
 
@@ -8,5 +8,3 @@ require (
 )
 
 require golang.org/x/text v0.7.0 // indirect
-
-replace github.com/gastrodon/psyduck => ../psyduck/
