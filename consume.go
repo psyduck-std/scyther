@@ -26,9 +26,6 @@ func consumeQueue(parse sdk.Parser, specParse sdk.SpecParser) (sdk.Consumer, err
 		go func() {
 			sdk.ConsumeChunk(next, specParse, data, errors)
 			done <- true
-			close(data)
-			close(errors)
-			close(done)
 		}()
 
 		return data, errors, done
